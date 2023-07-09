@@ -60,7 +60,19 @@ body::before {
 }
 
 .lista-de-personagens .personagem.selecionado {
-    box-shadow: 0px 0px 24px 5px #0271f7;
+    box-shadow: 0px 0px 24px 10px #d6d5d5;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.lista-de-personagens .personagem.selecionado:hover {
+    border: 1px solid #fff;
+}
+
+.lista-de-personagens .personagem.selecionado:active {
+    transform: scale(0.95) rotateZ(1.7deg);
 }
 
 .personagem-selecionado {
