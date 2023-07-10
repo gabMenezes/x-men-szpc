@@ -4,7 +4,7 @@ personagens.forEach((personagem) => {
   personagem.addEventListener("mouseover", () => {
 
     if(window.innerWidth < 450) {
-      window.scrollTo({top: 0, behavior})
+      window.scrollTo({top: 0, behavior: 'smooth'})
     }
 
     removerSelecaoDoPersonagem();
